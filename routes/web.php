@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/freelance',function (){
+
+    return view('freelance');
+})->middleware('auth')->name('freelance');
